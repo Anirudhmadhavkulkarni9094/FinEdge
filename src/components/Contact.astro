@@ -1,0 +1,54 @@
+<style>
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        font-weight: 700;
+        color: aliceblue;
+        margin: 0.5rem;
+    }
+    input,textarea{
+        padding: 1rem;
+        font-size: 700;
+        border-radius: 1rem;
+        border: none;
+        color: black;
+        background-color: aliceblue;
+    }
+
+    *{
+        background-color: black;
+    }
+
+    .contact{
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact img{
+        width: 70%;
+    }
+</style>
+<section id="contact">
+    <div class="row justify-content-around p-5">
+        <div class="col-lg-4 contact">
+            <h1>Contact Us!</h1>
+            <img src="src/components/Asset/Contact_me.png" alt="">
+        </div>
+        <div class="col-lg-4">
+            <form action="" class="form">
+                <label for="">Name</label>
+                <input type="text" placeholder="Name">
+                <label for="">Email</label>
+                <input type="email" placeholder="E-mail" name="email" id="email">
+                <label for="">Message</label>
+                <textarea name="message" placeholder="Enter your Query" id="" cols="20" rows="10"/>
+                <button class="btn btn-primary w-50 mt-3" type="submit">Query now!</button>
+            
+            </form>
+        </div>
+    </div>
+</section>
